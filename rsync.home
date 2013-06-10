@@ -1,0 +1,6 @@
+#!/bin/sh
+
+SRC=/home/
+DST=/mnt/backup/
+
+rsync --progress -za --delete --include "*~" ${SRC} ${DST}
